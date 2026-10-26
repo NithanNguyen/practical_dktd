@@ -1,0 +1,28 @@
+{
+  "label": "signcheck",
+  "recorded_at": "2026-10-26T11:17:44",
+  "port": "/dev/ttyUSB0",
+  "baud": 460800,
+  "n_rows": 2000,
+  "n_malformed_lines": 0,
+  "firmware": {
+    "gyro_bias_x": -0.16875,
+    "gyro_bias_y": 0.19375,
+    "gyro_bias_z": -0.185625,
+    "gyro_bias_std_max": 0.1035,
+    "bno_addr": 41,
+    "mode": "ACCGYRO",
+    "fs_hz": 100.0,
+    "ma_n": 10.0,
+    "cf_alpha": 0.98,
+    "gyro_sign_roll": 1.0,
+    "gyro_sign_pitch": 1.0,
+    "i2c_hz": 100000.0
+  },
+  "firmware_stat_lines": [
+    "# STAT i2c_fail=0,isr_q_full=0,tx_q_full=0",
+    "# STAT i2c_fail=0,isr_q_full=0,tx_q_full=0",
+    "# STAT i2c_fail=0,isr_q_full=0,tx_q_full=0"
+  ],
+  "firmware_warnings": []
+}
