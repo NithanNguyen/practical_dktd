@@ -1,0 +1,30 @@
+{
+  "port": "/dev/ttyUSB0",
+  "cpr": 1978.7,
+  "cpr_src": "Lab 3 – hiệu chuẩn quay tay (lab3_config.json)",
+  "sign": 1,
+  "settle_s": 1.5,
+  "estop_duties": [
+    40,
+    70,
+    100
+  ],
+  "estop_reps": 3,
+  "coast_duty": 100,
+  "coast_reps": 3,
+  "rev_duty": 70,
+  "rev_reps": 5,
+  "cpr_std": 10.40961094373842,
+  "fw": "lab4_robot v1.0",
+  "check": {
+    "btn_estop": true,
+    "btn_dir": true,
+    "reset_btn": true,
+    "encoder": true,
+    "rpm_at_40": 51.96575,
+    "reverse": true,
+    "estop_soft": true,
+    "enc_err": 0,
+    "all_ok": true
+  }
+}

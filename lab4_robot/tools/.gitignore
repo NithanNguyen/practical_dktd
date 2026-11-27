@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+# du lieu che do --sim: chi de chay thu, khong nop
+logs_sim/
+report_sim/
+lab4_config_sim.json
+host_sim/build/

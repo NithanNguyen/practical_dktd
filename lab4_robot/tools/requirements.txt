@@ -1,0 +1,4 @@
+# Python 3.8+ (Ubuntu 20.04). pip tu chon ban tuong thich.
+pyserial>=3.5
+numpy>=1.20
+matplotlib>=3.5

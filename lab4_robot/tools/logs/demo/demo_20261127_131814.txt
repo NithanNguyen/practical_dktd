@@ -1,0 +1,45 @@
+#BTN DIR DOWN
+#EV RUN src=btn dir=1 target=70.0
+#BTN DIR UP
+#BTN DIR DOWN
+#EV REV id=1 src=btn from=1 rpm0=93.99
+#EV REV_ZERO id=1 t_zero_ms=79.457 dir=-1
+#BTN DIR UP
+#RES REV id=1 src=btn rpm0=93.99 t_zero_ms=79.457 t90_ms=326.5 rpm1=-85.66 timeout=0
+# >>> DAO CHIEU #1: dung sau 79.5 ms, dat 90% toc do chieu moi sau 327 ms
+#CAP BEGIN kind=REV id=1 tref=28143460 n=428
+#CAP END kind=REV id=1
+#BTN DIR DOWN
+#EV REV id=2 src=btn from=-1 rpm0=-96.27
+#EV REV_ZERO id=2 t_zero_ms=76.279 dir=1
+#BTN DIR UP
+#RES REV id=2 src=btn rpm0=-96.27 t_zero_ms=76.279 t90_ms=335.0 rpm1=87.94 timeout=0
+# >>> DAO CHIEU #2: dung sau 76.3 ms, dat 90% toc do chieu moi sau 335 ms
+#CAP BEGIN kind=REV id=2 tref=34003501 n=436
+#CAP END kind=REV id=2
+#EV ESTOP id=1 src=btn mode=brake rpm0=94.75 duty0=70.0
+#BTN ESTOP DOWN
+#RES ESTOP id=1 src=btn mode=brake rpm0=94.75 duty0=70.0 dt_ms=40.157 counts=51 deg=9.28 timeout=0 c0=24025 anc=24024
+# >>> DUNG KHAN #1 (brake): truc dung sau 40.2 ms, tu 94.7 rpm, quay them 9.3 do
+#CAP BEGIN kind=ESTOP id=1 tref=39542034 n=291
+#CAP END kind=ESTOP id=1
+#BTN ESTOP UP
+#BTN DIR DOWN
+# Dang dung khan: nha nut DUNG KHAN roi GIU nut DAO CHIEU 1 s de reset
+#BTN DIR UP
+#BTN ESTOP DOWN
+#BTN ESTOP UP
+#BTN DIR DOWN
+# Dang dung khan: nha nut DUNG KHAN roi GIU nut DAO CHIEU 1 s de reset
+#OK RESET src=btn (dong co dung, nhan DAO CHIEU hoac go run de chay)
+#BTN DIR UP
+#BTN DIR DOWN
+#EV RUN src=btn dir=1 target=70.0
+#BTN DIR UP
+#EV ESTOP id=2 src=btn mode=brake rpm0=94.00 duty0=70.0
+#BTN ESTOP DOWN
+#RES ESTOP id=2 src=btn mode=brake rpm0=94.00 duty0=70.0 dt_ms=40.029 counts=52 deg=9.46 timeout=0 c0=56607 anc=56606
+# >>> DUNG KHAN #2 (brake): truc dung sau 40.0 ms, tu 94.0 rpm, quay them 9.5 do
+#CAP BEGIN kind=ESTOP id=2 tref=76074946 n=291
+#CAP END kind=ESTOP id=2
+#BTN ESTOP UP
